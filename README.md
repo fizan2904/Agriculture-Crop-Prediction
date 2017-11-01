@@ -50,3 +50,16 @@ To run main server
 cd /path/to/project
 python3 main.py
 ```
+
+## Accessing API
+
+All the api can be accessed by adding the following url to base url http://localhost:5000/predict/
+
+*river = { arjuna, koushika }
+*
+
+### Linear Regression
+
+```
+svm/<kernel>/<river>/<crop>
+```
