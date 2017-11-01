@@ -55,9 +55,9 @@ python3 main.py
 
 All the api can be accessed by adding the following url to base url http://localhost:5000/predict/
 
-*river = { arjuna, koushika }__
-*crop = { paddy, maize, cereals}__
-*kernel = { gamma, linear, poly, linearwithc, polywithdegree, rbc}__
+*river = { arjuna, koushika }<br />
+*crop = { paddy, maize, cereals}<br />
+*kernel = { gamma, linear, poly, linearwithc, polywithdegree, rbc}<br />
 *reg_type = { linear, logistic}
 
 ### Linear Regression
