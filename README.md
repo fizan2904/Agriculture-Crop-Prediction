@@ -63,17 +63,17 @@ All the api can be accessed by adding the following url to base url http://local
 ### Linear Regression
 
 ```
-kernel_regression/<reg_type>/<river>/<crop>
+/kernel_regression/<reg_type>/<river>/<crop>
 ```
 
 ### SVM
 
 ```
-svm/<reg_type>/<river>/<crop>
+/svm/<reg_type>/<river>/<crop>
 ```
 
 ### KNN
 
 ```
-kernel_regression/<river>/<crop>
+/kernel_regression/<river>/<crop>
 ```
