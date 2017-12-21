@@ -9,15 +9,23 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import style
 import _pickle as pickle
+from os import path
 
 style.use('ggplot')
 
-data = pd.read_csv("/Users/senora/Desktop/keshu/Keshu-agriculture/app/old_data/arj_formatted.csv")
-dataTrain_arjuna = pd.read_csv("/Users/senora/Desktop/keshu/Keshu-agriculture/app/old_data/train.csv")
-dataTest_arjuna = pd.read_csv("/Users/senora/Desktop/keshu/Keshu-agriculture/app/old_data/test.csv")
+basepath = path.dirname(__file__)
+path0 = path.abspath(path.join(basepath, "..", "old_data", "arj_formatted.csv"))
+path1 = path.abspath(path.join(basepath, "..", "old_data", "train.csv"))
+path2 = path.abspath(path.join(basepath, "..", "old_data", "test.csv"))
+path3 = path.abspath(path.join(basepath, "..", "old_data", "train_koushika.csv"))
+path4 = path.abspath(path.join(basepath, "..", "old_data", "test_koushika.csv"))
+data = pd.read_csv(path0)
+print(path1)
+dataTrain_arjuna = pd.read_csv(path1)
+dataTest_arjuna = pd.read_csv(path2)
 
-dataTrain_koushika = pd.read_csv("/Users/senora/Desktop/keshu/Keshu-agriculture/app/old_data/train_koushika.csv")
-dataTest_koushika = pd.read_csv("/Users/senora/Desktop/keshu/Keshu-agriculture/app/old_data/test_koushika.csv")
+dataTrain_koushika = pd.read_csv(path3)
+dataTest_koushika = pd.read_csv(path4)
 
 @app.route('/predict/kernel_regression/<type_of_reg>/<river>/<crop>')
 def predict(river, crop, type_of_reg):
